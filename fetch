@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z "$1" ]
+then
+      read -p 'url: ' url
+      curl --request GET $url | json_pp -json_opt pretty
+else
+      curl --request GET $1 | json_pp -json_opt pretty
+fi
