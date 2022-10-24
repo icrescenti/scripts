@@ -29,5 +29,5 @@ while True:
     for i in range(_max):
         #print(hours[i], minutes[i], "==", now.hour, now.minute, (hours[i] == now.hour and minutes[i] == now.minute))
         if (hours[i] == now.hour and minutes[i] == now.minute):
-            os.system('fswebcam -r 1280x720 --no-timestamp --no-underlay --no-banner ./' + str(now.hour) + ":" + str(now.minute) + '.jpg')
+            os.system('fswebcam -r 1280x720 --no-timestamp --no-underlay --no-banner ./' + str(now.year) + "-" + str(now.month) + "-" + str(now.day) + "-" + str(now.hour) + str(now.minute) + '00.jpg')
     time.sleep(30)
