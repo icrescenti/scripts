@@ -1,6 +1,6 @@
 from math import log
 
-print("BEWARE that rb and Tb are set from a compression generated using bzip2 on the following hardware")
+print("BEWARE that rb and Tb are set from a compression generated using bzip2 on my hardware at the time")
 print("----------------------")
 
 alpha = 1.0
